@@ -72,7 +72,7 @@
                 <form name="contact-form" class="contact-form">
                     <label class="form-label" for="person-name">Ім'я</label>
                     <div class="form-control">
-                        <input class="form-input" id="person-name" type="text" name="person-name" />
+                        <input class="form-input" id="person-name" type="text" name="person-name" required/>
                         <svg class="form-icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
@@ -80,7 +80,7 @@
                 
                     <label class="form-label" for="person-phone">Телефон</label>
                     <div class="form-control">
-                        <input class="form-input" id="person-phone" type="tel" name="person-phone" />
+                        <input class="form-input" id="person-phone" type="tel" name="person-phone" required/>
                         <svg class="form-icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
@@ -88,7 +88,7 @@
                 
                     <label class="form-label" for="person-mail">Пошта</label>
                     <div class="form-control">
-                        <input class="form-input" id="person-mail" type="email" name="person-mail" />
+                        <input class="form-input" id="person-mail" type="email" name="person-mail" required/>
                         <svg class="form-icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
@@ -101,7 +101,7 @@
                     <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox" />
                     <label class="checkbox-label" for="terms-checkbox">
                         Погоджуюся з розсилкою та приймаю
-                        <a href="#">Умови договору</a>
+                        <a class="form-link" href="#">Умови договору</a>
                     </label>
                 
                     <button class="form-button primary-button" type="submit">
@@ -446,6 +446,21 @@
                         </li>
                     </ul>
                 </div>
+                    <form name="sign-up-form" class="sign-up-container">
+                    <div class="sign-up-email">
+                        <h2 class="sign-up-title">Підпишіться на розсилку</h2>
+                        <label class="visually-hidden" for="person-email">Елекронна пошта</label>
+                        <input class="form-sign-up" id="person-email" type="email" name="person-email" placeholder="E-mail" required/>
+                    </div>
+                    <div class="sign-up-submit">
+                        <button class="sign-up-button " type="submit">
+                            Підписатися
+                            <svg class="icon-sing-up" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>

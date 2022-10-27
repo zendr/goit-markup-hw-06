@@ -467,8 +467,9 @@ margin-bottom: 20px;
     align-items: center;
     gap: 70px;
 }
-
-.join-title {
+/*Приєднуйтесь у футері*/
+.join-title,
+.sign-up-title {
     margin-bottom: 20px;
     color: var(--other-text-color);
     font-weight: 700;
@@ -484,7 +485,6 @@ margin-bottom: 20px;
     align-items: center;
     gap: 10px;
 }
-
 .join-link {
     display: flex;
     width: 44px;
@@ -507,6 +507,46 @@ margin-bottom: 20px;
     fill: currentColor;
 }
 
+/*Підписатися у футері*/
+.sign-up-container {
+    display: flex;
+}
+.form-sign-up {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--other-text-color);
+    background-color: inherit;
+    padding-right: 180px;
+}
+.sign-up-button{
+display: flex;
+padding: 10px 52px;
+border: none;
+cursor: pointer;
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+color: var(--other-text-color);
+}
+.sign-up-email {
+    margin-right: 12px;
+}
+.sign-up-submit {
+    align-self: flex-end;
+}
+.icon-sing-up {
+    margin-left: 10px;
+}
 /*ПОРТФОЛІО*/
 .example {
     display: flex;
@@ -713,7 +753,7 @@ margin-bottom: 20px;
     margin-top: 40px;
 }
 .contact-form {
-    margin: 2px 40px 40px 40px;
+    margin: 2px 40px 30px 40px;
     
 }
 .form-label {
@@ -761,12 +801,22 @@ margin-bottom: 20px;
     padding: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    resize: none;
 }
 .form-textarea:focus {
     border-color: var(--accent-color);
 }
-
+.form-link:active,
+.form-link:visited,
+.form-link:link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--accent-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
 .form-button {
     display: inline-block;
     padding: 10px 52px;
@@ -794,14 +844,20 @@ margin-bottom: 20px;
 }
 
 .checkbox-label {
+    display: block;
+    margin-bottom: 20px;
     position: relative;
-    padding-left: 28px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .checkbox-label::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 3px;
+    left: 14px;
     width: 16px;
     height: 15px;
     border: 1px solid black;
@@ -811,8 +867,8 @@ margin-bottom: 20px;
 
 .checkbox-label::after {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 3px;
+    left: 14px;
     width: 16px;
     height: 15px;
     background-image: url('../images/icon-check.svg');
