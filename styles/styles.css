@@ -509,23 +509,28 @@ margin-bottom: 20px;
 
 /*Підписатися у футері*/
 .sign-up-container {
+    margin-left: 23px;
+}
+.sign-up {
     display: flex;
+    margin-right: 23px;
 }
 .form-sign-up {
     display: block;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--other-text-color);
     background-color: inherit;
-    padding-right: 180px;
+    padding-right: 158px;
 }
 .sign-up-button{
 display: flex;
-padding: 10px 52px;
+padding: 10px 30px;
 border: none;
 cursor: pointer;
 background-color: var(--accent-color);
@@ -536,10 +541,12 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.9;
+letter-spacing: 0.06em;
 color: var(--other-text-color);
 }
 .sign-up-email {
     margin-right: 12px;
+
 }
 .sign-up-submit {
     align-self: flex-end;
@@ -727,19 +734,23 @@ color: var(--other-text-color);
     width: 30px;
     height: 30px;
 
-    fill: var(--logo-color);
-    background: var(--main-light-color);
+    fill: var(--title-text-color);
+    background: var(--other-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 250ms var(--time-function)
+    transition: transform 250ms var(--time-function),
+                fill 250ms var(--time-function)
 }
-
+.close:hover {
+    fill: var(--accent-color);
+}
 .close-svg {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* Форма */
 .form-title {
     font-family: 'Roboto';
@@ -773,7 +784,7 @@ color: var(--other-text-color);
 
 .form-input {
     width: 100%;
-    padding: 12px 12px 12px 32px;
+    padding: 10px 10px 10px 32px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
@@ -803,6 +814,9 @@ color: var(--other-text-color);
     border-radius: 4px;
     margin-bottom: 15px;
     resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 }
 .form-textarea:focus {
     border-color: var(--accent-color);
@@ -819,7 +833,7 @@ color: var(--other-text-color);
 }
 .form-button {
     display: inline-block;
-    padding: 10px 52px;
+    padding: 10px 58px;
     border: none;
     cursor: pointer;
     background-color: #2196F3;
@@ -830,8 +844,8 @@ color: var(--other-text-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
+    letter-spacing: 0.06em;
     color: var(--other-text-color);
-    transition: background-color 250ms var(--time-function);
 }
 .form-button primary-button {
     margin: 0 auto;
